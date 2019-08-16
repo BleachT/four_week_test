@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="">
+<!--        c创建文本域-->
+        First name: <input type="text" name="firstname"> <br>
+        Last name : <input type="text" name="lastname">
+
+
+    </form>
+    <p>
+        <b>注意：</b> 表单本事是不可见的 ，并且注意一个文本字段的默认宽
+    </p>
+
+<!--    创建密码域-->
+    <form action="">
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="password">
+
+        <p> <b>注意: </b> 密码字段的字符是隐藏的 星号或者 圆圈 </p>
+
+    </form>
+
+    <form>
+<!--        单选按钮 radio buttons-->
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female
+    </form>
+    <br />
+
+    <form>
+<!--        复选按钮 checkbox-->
+        <input type="checkbox" name="vehicle" value="bike">I have a bike <br>
+        <input type="checkbox" name="vehicle" value="apple"> I have a apple
+    </form>
+
+    <form name="input" action="linking.html" method="get">
+        <p>提交按钮</p>
+         Username: <input type="text" name="user">
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <form action="linking.html">
+        <p>下拉列表</p>
+        <select name="cars">
+            <option value="volvo"> Volvo </option>
+            <option value="audi"> Audi </option>
+            <option value="ford"> Ford </option>
+            <option value="bmw"> BMW </option>
+
+
+        </select>
+
+    </form>
+
+    <form action="geshihua_zifu.html">
+        <p> 有预选项的下拉列表</p>
+        <select>
+
+            <option value="volvo"> Volvo </option>
+            <option value="audi"> Audi </option>
+            <option value="ford" selected> Ford </option>
+            <option value="bmw"> BMW </option>
+        </select>
+    </form>
+    <form action="">
+        <p> 有边框的表单 </p>
+        <fieldset>
+            <legend> Person information</legend>
+            Name: <input type="text" size="30"><br>
+            E-mail:<input type="text" size="30"><br>
+            Date of birth: <input type="text" size="20">
+
+        </fieldset>
+        <input type="submit" value="提交">
+    </form>
+
+    <form action="div_table.html" method="get">
+          <input type="checkbox" name="vehicle[]" value="Bike"> I have a bike<br>
+          <input type="checkbox" name="vehicle[]" value="Car" checked="checked"> I have a car<br>
+          <input type="submit" value="提交">
+    </form>
+    <form action="div_table.html" method="get">
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        <input type="submit" value="确认">
+    </form>
+
+    <h3>发送邮件到someone@example.com:</h3>
+    <form>
+        Name:<br>
+        <input type="text" name="name" value="your name"><br>
+        E-mail：<br>
+        <input type="text" name="e-mail" value="e-mail"><br>
+        Comment:<br>
+        <input type="text"  name="comment" value="your comment" size="50"><br><br>
+        <input type="submit" value="发送">
+        <input type="submit" value="重置">
+
+    </form>
+
+
+</body>
+</html>
